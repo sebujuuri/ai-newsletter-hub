@@ -79,13 +79,13 @@ const Index = () => {
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 
-      <main className="min-h-screen flex flex-col items-center justify-center p-4 bg-gradient-to-b from-background to-secondary/20">
+      <main className="min-h-screen flex flex-col items-center justify-center p-4 bg-gradient-to-br from-emerald-800 via-emerald-600 to-white">
         <div className="w-full max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/60">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white drop-shadow-lg">
             Your AI News, Curated Daily
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto">
             Stay ahead of the curve with our AI newsletter aggregator. 
             Get the most important AI updates delivered to your inbox.
           </p>
@@ -102,17 +102,17 @@ const Index = () => {
                         <Input
                           placeholder="Enter your email"
                           {...field}
-                          className="h-12 text-base"
+                          className="h-12 text-base bg-white/95 border-white/20 placeholder:text-gray-500"
                           disabled={isLoading}
                         />
                       </FormControl>
-                      <FormMessage />
+                      <FormMessage className="text-white" />
                     </FormItem>
                   )}
                 />
                 <Button
                   type="submit"
-                  className="w-full h-12 text-base"
+                  className="w-full h-12 text-base bg-white text-emerald-800 hover:bg-white/90"
                   disabled={isLoading}
                 >
                   {isLoading ? (
@@ -128,8 +128,8 @@ const Index = () => {
             </Form>
           </div>
 
-          <div className="pt-8 text-muted-foreground animate-fade-in animation-delay-300">
-            <p className="text-sm">
+          <div className="pt-8 animate-fade-in animation-delay-300">
+            <p className="text-sm text-white/80">
               Join hundreds of AI enthusiasts getting smarter every day
             </p>
           </div>
