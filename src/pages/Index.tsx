@@ -10,30 +10,30 @@ const Index = () => {
         <title>AI Newsletter Hub - Smart Newsletter Management & Curation</title>
         <meta
           name="description"
-          content="Transform your newsletter experience with AI-powered curation, personalized audio briefings, and intelligent inbox management. Join the future of content consumption!"
+          content="Transform your newsletter experience with AI-powered newsletter aggregator, curation, personalized audio briefings, and intelligent inbox management. Join the future of content consumption!"
         />
         <meta
           name="keywords"
-          content="AI newsletter management, personalized news, newsletter curation, audio briefings, inbox zero, content aggregation"
+          content="AI newsletter management, newsletter aggregator, personalized news, newsletter curation, audio briefings, inbox zero, content aggregation"
         />
         <meta property="og:title" content="AI Newsletter Hub - Smart Newsletter Management & Curation" />
         <meta
           property="og:description"
-          content="Transform your newsletter experience with AI-powered curation, personalized audio briefings, and intelligent inbox management. Join the future of content consumption!"
+          content="Transform your newsletter experience with AI-powered newsletter aggregator, curation, personalized audio briefings, and intelligent inbox management. Join the future of content consumption!"
         />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="AI Newsletter Hub - Smart Newsletter Management" />
         <meta
           name="twitter:description"
-          content="AI-powered newsletter curation and audio briefings for the modern professional."
+          content="AI-powered newsletter aggregator, curation and audio briefings for the modern professional."
         />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "SoftwareApplication",
             "name": "AI Newsletter Hub",
-            "description": "AI-powered newsletter curation and management platform",
+            "description": "AI-powered newsletter aggregator, curation and management platform",
             "applicationCategory": "BusinessApplication",
             "offers": {
               "@type": "Offer",
@@ -41,6 +41,7 @@ const Index = () => {
             },
             "featureList": [
               "AI-powered content curation",
+              "Newsletter aggregation",
               "Personalized audio briefings",
               "Intelligent inbox management"
             ]
