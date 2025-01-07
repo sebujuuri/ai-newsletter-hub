@@ -79,7 +79,7 @@ const Index = () => {
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 
-      <main className="min-h-screen flex flex-col items-center justify-center p-4 bg-gradient-to-br from-emerald-800 via-emerald-600 to-white">
+      <main className="min-h-screen flex flex-col items-center justify-center p-4 bg-gradient-to-br from-emerald-800 via-emerald-600 to-white animate-gradient-flow">
         <div className="w-full max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white drop-shadow-lg">
             Your AI News, Curated Daily
