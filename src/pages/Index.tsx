@@ -7,22 +7,45 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>AI Newsletter Hub - Join the Waitlist</title>
+        <title>AI Newsletter Hub - Smart Newsletter Management & Curation</title>
         <meta
           name="description"
-          content="Transform your newsletter experience with AI-powered curation and personalization. Join the waitlist for early access!"
+          content="Transform your newsletter experience with AI-powered curation, personalized audio briefings, and intelligent inbox management. Join the future of content consumption!"
         />
         <meta
           name="keywords"
-          content="AI newsletter, newsletter management, personalized news, AI curation"
+          content="AI newsletter management, personalized news, newsletter curation, audio briefings, inbox zero, content aggregation"
         />
-        <meta property="og:title" content="AI Newsletter Hub - Join the Waitlist" />
+        <meta property="og:title" content="AI Newsletter Hub - Smart Newsletter Management & Curation" />
         <meta
           property="og:description"
-          content="Transform your newsletter experience with AI-powered curation and personalization. Join the waitlist for early access!"
+          content="Transform your newsletter experience with AI-powered curation, personalized audio briefings, and intelligent inbox management. Join the future of content consumption!"
         />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="AI Newsletter Hub - Smart Newsletter Management" />
+        <meta
+          name="twitter:description"
+          content="AI-powered newsletter curation and audio briefings for the modern professional."
+        />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "AI Newsletter Hub",
+            "description": "AI-powered newsletter curation and management platform",
+            "applicationCategory": "BusinessApplication",
+            "offers": {
+              "@type": "Offer",
+              "availability": "ComingSoon"
+            },
+            "featureList": [
+              "AI-powered content curation",
+              "Personalized audio briefings",
+              "Intelligent inbox management"
+            ]
+          })}
+        </script>
       </Helmet>
 
       <main className="min-h-screen flex flex-col items-center justify-start p-4 bg-gradient-to-br from-emerald-800 via-emerald-600 to-white relative overflow-hidden">
