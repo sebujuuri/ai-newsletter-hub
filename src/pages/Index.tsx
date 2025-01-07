@@ -79,8 +79,48 @@ const Index = () => {
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 
-      <main className="min-h-screen flex flex-col items-center justify-center p-4 bg-gradient-to-br from-emerald-800 via-emerald-600 to-white animate-gradient-flow">
-        <div className="w-full max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
+      <main className="min-h-screen flex flex-col items-center justify-center p-4 bg-gradient-to-br from-emerald-800 via-emerald-600 to-white animate-gradient-flow relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <svg
+            className="w-full h-full opacity-30"
+            viewBox="0 0 1000 1000"
+            preserveAspectRatio="none"
+          >
+            <path
+              className="wave animate-wave fill-current text-emerald-400"
+              d="M0,500 C150,400 350,300 500,500 C650,700 850,600 1000,500 V1000 H0 V500Z"
+            >
+              <animate
+                attributeName="d"
+                dur="20s"
+                repeatCount="indefinite"
+                values="
+                  M0,500 C150,400 350,300 500,500 C650,700 850,600 1000,500 V1000 H0 V500Z;
+                  M0,500 C150,600 350,700 500,500 C650,300 850,400 1000,500 V1000 H0 V500Z;
+                  M0,500 C150,400 350,300 500,500 C650,700 850,600 1000,500 V1000 H0 V500Z
+                "
+              />
+            </path>
+            <path
+              className="wave animate-wave fill-current text-cyan-400"
+              d="M0,600 C150,500 350,400 500,600 C650,800 850,700 1000,600 V1000 H0 V600Z"
+              opacity="0.3"
+            >
+              <animate
+                attributeName="d"
+                dur="15s"
+                repeatCount="indefinite"
+                values="
+                  M0,600 C150,500 350,400 500,600 C650,800 850,700 1000,600 V1000 H0 V600Z;
+                  M0,600 C150,700 350,800 500,600 C650,400 850,500 1000,600 V1000 H0 V600Z;
+                  M0,600 C150,500 350,400 500,600 C650,800 850,700 1000,600 V1000 H0 V600Z
+                "
+              />
+            </path>
+          </svg>
+        </div>
+
+        <div className="w-full max-w-4xl mx-auto text-center space-y-8 animate-fade-in relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white drop-shadow-lg">
             Your AI News, Curated Daily
           </h1>
